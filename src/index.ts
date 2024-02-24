@@ -7,7 +7,7 @@ const userContainer = document.getElementById("user");
 const loader = document.querySelector(".loader");
 
 function allUsers(users: User[]) {
-  const tbody = usersContainer.querySelector("tbody");
+  const tbody = usersContainer.querySelector("tbody"); 
   const title = usersContainer.querySelector("#title");
   tbody.innerHTML = "";
   title.innerHTML = `Users List - ${users.length} users`;

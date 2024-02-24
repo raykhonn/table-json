@@ -6,7 +6,7 @@ export const delay = (time = 2000) => new Promise((res) => setTimeout(res, time)
 
 export const getUsers = async () => {
 	await delay(2000); 
-
+ 
 	const res = await fetch(endPoint);
 	const users: User[] = await res.json();
 	return users;
